@@ -1,0 +1,739 @@
+/* ====== General Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f9ff;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* -------------------------------------Home section-------------------------------------- */
+
+
+/* ====== Navigation Bar ====== */
+header {
+  width: 100%;
+  padding: 20px 60px;
+  background-color: #fff; /* Changed from transparent to white for shadow visibility */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds the shadow */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #0056b3;
+  margin-left:-40px;           
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-right:-20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #0056b3;
+}
+
+.nav-links li:last-child a {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+
+
+/* ===================Hero Section========================== */
+/* ====== Hero Section ====== */
+.hero {
+  padding: 120px 60px 80px;
+  background-color: #eaf3ff;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 50px;
+  max-width: 1100px;
+  width: 100%;
+  align-items: start;
+}
+
+.column-1 p {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  font-weight: 500;
+  max-width: 400px;
+  margin-left: -150px;
+}
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 70px;
+}
+
+.skills-list li {
+  margin-bottom: 14px;
+  font-size: 18px;
+  color: #003366;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.skills-list i {
+  color: #0056b3;
+  margin-right: 12px;
+  font-size: 1.2rem;
+}
+
+.skills-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 40px;
+}
+
+.skills-badges span {
+  background-color: #d0e4ff;
+  color: #003366;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: fit-content;
+  box-shadow: 1px 2px 5px rgba(0, 86, 179, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.skills-badges span:hover {
+  background-color: #0056b3;
+  color: #fff;
+  cursor: default;
+}
+
+.highlight-box {
+  background-color: #fff;
+  border-left: 6px solid #0056b3;
+  padding: 25px 20px;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+  margin-bottom: 40px;
+  max-width: 320px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 86, 179, 0.2);
+}
+
+.btn.primary {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+}
+
+.btn.primary:hover {
+  background-color: #003d80;
+}
+
+.btn.secondary {
+  background-color: #fff;
+  color: #0056b3;
+  border: 2px solid #0056b3;
+}
+
+.btn.secondary:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+
+/* ====== Scroll Indicator ====== */
+.scroll-indicator {
+  margin-top: 70px;
+  color: #555;
+  font-size: 0.9rem;
+  text-align: center; /*Center text and arrow */
+  width: 100%;
+}
+
+.scroll-indicator .arrow {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 8px;
+  animation: bounce 1.5s infinite; /* Add bounce animation */
+}
+
+/* ====== Keyframes for Bounce Animation ====== */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+
+
+/* ====== Core Competencies Section ====== */
+.core-competencies {
+  padding: 80px 60px;
+  background-color: #f9fcff;
+  text-align: center;
+}
+
+.core-competencies h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+.core-competencies p {
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  color: #2c3e50;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.card h3 {
+  color: #003366;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.card ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #444;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: left;
+  opacity: 0.7;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+.card:hover {
+  color: #fff !important; /* Change text color to white */
+  background-color: #0056b3; /* Optional: change background so white text is visible */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transform: translateY(0);
+  opacity: 1;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Override colors for nested text elements inside card */
+.card:hover h3,
+.card:hover ul,
+.card:hover ul li {
+  color: #fff !important;
+}
+
+/* ====== Tools Section ====== */
+/* ====== Tools Section ====== */
+.tools-section {
+  padding: 80px 60px;
+  background-color: #f9fcff;
+  text-align: center;
+  color: #2c3e50;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tools-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: #0056b3;
+  font-weight: 700;
+}
+
+.tools-section .section-intro {
+  font-size: 1.15rem;
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #2c3e50;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  text-align: left;
+}
+
+/* Each tool category card */
+.tool-category {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 6px 12px rgba(0, 86, 179, 0.1);
+  cursor: default;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.15s ease;
+  user-select: none;
+  /* pressed button effect on hover */
+}
+.tool-category:hover {
+  box-shadow: 0 12px 24px rgba(0, 86, 179, 0.2);
+  transform: scale(0.97);
+}
+
+/* Tool category titles */
+.tool-category h3 {
+  font-size: 1.4rem;
+  color: #003366;
+  margin-bottom: 22px;
+  font-weight: 600;
+}
+
+/* List styles */
+.tool-category ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.tool-category ul li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 1.05rem;
+  color: #444;
+  padding: 8px 0;
+  border-radius: 6px;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.1s ease;
+  user-select: none;
+}
+
+/* Icon style */
+.tool-category ul li i {
+  color: #0056b3;
+  font-size: 1.25rem;
+  min-width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Pressed button effect on list items on hover */
+.tool-category ul li:hover {
+  background-color: #0056b3;
+  color: #fff;
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+/* ================Testimonials Section & Contact Section */
+/* Wrapper holding testimonials and contact side-by-side */
+.testimonials-contact-wrapper {
+  display: flex;
+  gap: 50px;
+  padding: 80px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap; /* allows wrap on small screens */
+  background-color: #f9fcff;
+  color: #2c3e50;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Testimonials Section ===== */
+.testimonials {
+  flex: 1 1 500px; /* flexible grow, shrink, basis */
+  background-color: #fff;
+  padding: 30px 35px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 86, 179, 0.1);
+  min-width: 320px;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.testimonials p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  font-weight: 500;
+  color: #444;
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.testimonial {
+  background-color: #e8f0ff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 5px rgba(0, 86, 179, 0.1);
+  font-style: italic;
+  color: #003366;
+  position: relative;
+}
+
+.testimonial p {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.testimonial h4 {
+  margin: 0;
+  font-weight: 700;
+  color: #0056b3;
+  font-size: 1.05rem;
+}
+
+.testimonial span {
+  font-size: 0.9rem;
+  color: #0056b380; /* lighter blue */
+}
+
+/* ===== Contact Section ===== */
+.contact {
+  flex: 1 1 400px;
+  background-color: #fff;
+  padding: 30px 35px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 86, 179, 0.1);
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: flex-start;
+}
+
+/* Contact icons container */
+.contact-links {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.contact-links p {
+  margin: 0;
+}
+
+.contact-links a {
+  color: #0056b3;
+  font-size: 1.8rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.contact-links a:hover,
+.contact-links a:focus {
+  color: #003366;
+  transform: scale(1.1);
+  outline: none;
+}
+
+/* Contact form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+}
+
+button[type="submit"] {
+  background-color: #0056b3;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 14px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: #003366;
+  transform: scale(1.05);
+  outline: none;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 900px) {
+  .testimonials-contact-wrapper {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .testimonials,
+  .contact {
+    min-width: 100%;
+  }
+}
+
+/* ==========Footer section============== */
+footer {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 40px 60px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+  margin-bottom: 20px;
+}
+
+.footer-content p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.social-links .btn.primary {
+  background-color: #fff;
+  color: #0056b3;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.social-links .btn.primary:hover {
+  background-color: #003366;
+  color: #fff;
+}
+
+footer p:last-child {
+  font-size: 0.9rem;
+  color: #cce0ff;
+  margin-top: 30px;
+}
+
+
+/* ================SMALLER SCREENS========= */
+/* ========== Responsive Design: Medium Screens (768px and below) ========== */
+/* ===================== Responsive for Tablets & Smaller Devices ===================== */
+@media (max-width: 768px) {
+  /* Hide the logo */
+  .logo {
+    display: none;
+  }
+  .scroll-indicator{
+    display: none;
+  }
+
+  /* Navbar stays horizontal at top */
+  header {
+    flex-direction: row;
+    padding: 15px 20px;
+    justify-content: center; /* center nav horizontally */
+  }
+
+  .navbar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 15px;
+    margin: 0;
+  }
+
+  /* Adjust nav link font and padding for small screens */
+  .nav-links a {
+    padding: 8px 10px;
+    font-size:12px;
+  }
+
+  /* Keep last nav button styling */
+  .nav-links li:last-child a {
+    padding: 8px 14px;
+  }
+
+  /* Remove scroll indicator - hide scrollbars */
+  /* For most browsers */
+  body, html {
+    overflow-x: hidden;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* For Webkit browsers */
+  body::-webkit-scrollbar, html::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hero section smooth & fits screen */
+  .hero {
+    padding: 100px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Fill full viewport height */
+    box-sizing: border-box;
+    overflow: hidden; /* prevent scroll inside hero */
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 100%;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .column-1 p {
+    margin-left: 0;
+    font-size: 20px;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .skills-list li {
+    font-size: 16px;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .skills-badges {
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .highlight-box {
+    max-width: 90%;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+}
+
+#msg{
+  color:#0056b3;
+  margin-top:10px;
+  display: block;
+}
+

@@ -4,9 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Style.css" />
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
+
+  <!-- ====== Navigation Bar ====== -->
   <header>
     <nav class="navbar">
       <div class="logo">Portfolio</div>
@@ -14,93 +18,208 @@
         <li><a href="#">Home</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
-        <li><button class="contact-btn">Contact Me</button></li>
+        <li><a href="#contact">Contact Me</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="core-competencies">
-      <h2>Core Competencies</h2>
-      <p>My professional toolkit combines exceptional customer service with administrative expertise and technical proficiency in Excel</p>
-      <div class="cards">
-        <div class="card">
-          <h3>Customer Service Excellence</h3>
-          <ul>
-            <li>Client relationship management</li>
-            <li>Conflict resolution</li>
-            <li>Active listening</li>
-            <li>Problem-solving</li>
-            <li>Service recovery protocols</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Administrative Support</h3>
-          <ul>
-            <li>Document management</li>
-            <li>Calendar coordination</li>
-            <li>Meeting facilitation</li>
-            <li>Office organization</li>
-            <li>Digital filing systems</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Scheduling & Organization</h3>
-          <ul>
-            <li>Optimizing schedules</li>
-            <li>Maintaining workflows</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Excel & Data Management</h3>
-          <ul>
-            <li>Advanced Excel skills</li>
-            <li>Data analysis and visualization</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <!-- ====== Hero Section ====== -->
+   <section class="hero">
+  <div class="hero-grid">
 
+    <!-- Column 1: Paragraph + Skills List -->
+    <div class="column-1">
+      <p>
+        Delivering exceptional customer service Administrative support and Data management with advanced Excel expertise
+      </p>
+      <ul class="skills-list">
+        <li><i class="fa-solid fa-headset"></i> Customer Service</li>
+        <li><i class="fa-solid fa-file-invoice"></i> Data Management</li>
+        <li><i class="fa-solid fa-chart-line"></i> Advanced Excel</li>
+      </ul>
+    </div>
+
+    <!-- Column 2: Skills Badges -->
+    <div class="column-2">
+      <div class="skills-badges">
+        <span>Customer Service</span>
+        <span>Administrative Support</span>
+        <span>Data Management</span>
+        <span>Advanced Excel</span>
+        <span>Communication</span>
+      </div>
+    </div>
+
+    <!-- Column 3: Highlight Box + CTA Buttons -->
+    <div class="column-3">
+      <div class="highlight-box">
+        <p><strong>Proven</strong> experience streamlining office workflows and data processes</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="#skills" class="btn primary">Explore My Skills</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="scroll-indicator">
+    Scroll Down<br /><span class="arrow">&#8595;</span>
+  </div>
+</section>
+
+
+<main>
+
+  <!-- ====== Core Competencies Section ====== -->
+  <section class="core-competencies" id="skills">
+    <h2>Core Competencies</h2>
+    <p>My professional toolkit combines exceptional customer service with administrative expertise and technical proficiency in Excel</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Customer Service Excellence</h3>
+        <ul>
+          <li>Client relationship management</li>
+          <li>Conflict resolution</li>
+          <li>Active listening</li>
+          <li>Problem-solving</li>
+          <li>Service recovery protocols</li>
+          <li>Customer Chatting</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Administrative Support</h3>
+        <ul>
+          <li>Document management & Data Entry</li>
+          <li>Calendar coordination</li>
+          <li>Meeting facilitation</li>
+          <li>Office organization</li>
+          <li>Digital filing systems</li>
+          <li>Email Management</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Scheduling & Organization</h3>
+        <ul>
+          <li>Optimizing schedules</li>
+          <li>Maintaining workflows</li>
+          <li>Streamlining workflow to improve office productivity</li>
+          <li>Creating and maintaining effective calendars and timetables</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Excel & Data Management</h3>
+        <ul>
+          <li>Advanced Excel skills</li>
+          <li>Data analysis and visualization</li>
+          <li>Consolidating and analyzing large datasets</li>
+          <li>Data entry and cleansing for accuracy and reliability</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Tools Section with Icons ====== -->
+  <section id="tools" class="tools-section">
+    <h2>Tools I Use</h2>
+    <p class="section-intro">I leverage a variety of tools to streamline work, manage data and stay organized:</p>
+
+    <div class="tools-grid">
+      <div class="tool-category">
+        <h3>Office & Data</h3>
+        <ul>
+          <li><i class="fa-solid fa-file-excel"></i> Microsoft Excel</li>
+          <li><i class="fa-solid fa-database"></i> Microsoft Access</li>
+          <li><i class="fa-brands fa-google-drive"></i> Google Sheets</li>
+          <li><i class="fa-solid fa-file-word"></i> Microsoft Word</li>
+          <li><i class="fa-solid fa-file-powerpoint"></i> PowerPoint</li>
+        </ul>
+      </div>
+      <div class="tool-category">
+        <h3>Records Management</h3>
+        <ul>
+          <li><i class="fa-solid fa-file-invoice-dollar"></i> QuickBooks</li>
+          <li><i class="fa-solid fa-folder-open"></i> File Management Systems</li>
+          <li><i class="fa-solid fa-user-graduate"></i> Student Information Systems (SIS)</li>
+        </ul>
+      </div>
+      <div class="tool-category">
+        <h3>Productivity & Communication</h3>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i> Microsoft Outlook</li>
+          <li><i class="fa-regular fa-calendar-days"></i> Google Calendar</li>
+          <li><i class="fa-brands fa-trello"></i> Trello / Asana</li>
+          <li><i class="fa-solid fa-video"></i> Zoom / Google Meet</li>
+          <li><i class="fa-solid fa-comments"></i> Microsoft Teams</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Testimonials and Contact Side by Side ====== -->
+  <div class="testimonials-contact-wrapper">
+    <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
       <h2>Client Testimonials</h2>
       <p>What colleagues and clients say about my work and professional impact</p>
       <div class="testimonials-grid">
         <div class="testimonial">
           <p>"An exceptional administrative professional who consistently exceeds expectations. Their Excel expertise saved our team countless hours on reporting tasks."</p>
-          <h4>Susan Suder</h4><span>Operations Manager</span>
+          <h4>Susan Suder</h4><span>Operations Head</span>
         </div>
         <div class="testimonial">
           <p>"Outstanding customer service skills with the ability to handle difficult situations with grace and professionalism. A true asset to any sales team."</p>
-          <h4>Sally Michael </h4><span>Client Services Director</span>
+          <h4>Sally Michael</h4><span>Client Services Coordinator</span>
         </div>
+      </div>
     </section>
 
-    <section class="contact">
-      <div>
-        <p><strong>Phone:</strong> (254)727255011</p>
-        <p><strong>Location:</strong> Nairobi, Kenya</p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="contact-links">
+        <p><a href="mailto:jepichiisandra@gmail.com"><i class="fa-solid fa-envelope"></i></a></p>
+        <p><a href="https://wa.me/254727255011" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></p>
+        <p><a href="https://www.linkedin.com/in/sandra-wandera" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></p>
       </div>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="How can I help you?"></textarea>
+      <form name="submit-to-google-sheet">
+        <input type="text" name="Name"  placeholder="Your Name" required />
+        <input type="email" name="Email" placeholder="Your Email" required />
+        <textarea name="Message" placeholder="How can I help you?" required></textarea>
         <button type="submit">Send Message</button>
       </form>
+      <span id="msg"></span>
     </section>
-  </main>
+  </div>
 
+</main>
+
+  <!-- ====== Footer ====== -->
   <footer>
     <div class="footer-content">
-      <p>Portfolio</p>
+      <p>Let's work together</p>
       <p>Dedicated to providing exceptional administrative support and customer service excellence.</p>
       <div class="social-links">
-        <button>LinkedIn</button>
-        <button>Email</button>
+        <a href="mailto:jepichiisandra@gmail.com" class="btn primary" aria-label="Email">Email Me</a>
       </div>
     </div>
-    <p>&copy; 2025 sandra wandera. All rights reserved.</p>
+    <p>&copy; 2025 Sandra Wandera.❤️ All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwoSEGV9XARo1ul7z11EveFw5U7_VtBa16aQH0qsI2v3BQYtAJgqXUjEz6vRUlO3GDM/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML= " Message Sent successfully!"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },8000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </html>
