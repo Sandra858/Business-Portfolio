@@ -515,6 +515,17 @@ header {
   outline: none;
 }
 
+.cv{
+  background-color: #007bff; /* Blue */
+    color: white;
+    border: none;
+   padding: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 13px;
+    width: 100%;
+}
+
 /* Contact form */
 form {
   display: flex;
